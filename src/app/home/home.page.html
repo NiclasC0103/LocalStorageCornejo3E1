@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo-cabecera">
+      Pruebas - LocalStorage Cornejo 3E1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="titulo-contenido" size="large">
+        Testing - Add LocalStorage
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-label class="label">{{ recovertext }}</ion-label>
+    <input type="text" [(ngModel)]="receivetext" class="texto-ingreso">
+    <ion-button (click)="print()" class="enviar">
+      <ion-icon slot="start" name="send-outline"></ion-icon>
+      Enviar
+    </ion-button>
+  </div>
+</ion-content>
